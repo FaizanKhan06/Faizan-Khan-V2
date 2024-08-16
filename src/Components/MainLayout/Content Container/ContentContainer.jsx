@@ -48,7 +48,7 @@ export default function ContentContainer({ setCurrentSection, data }) {
       <ExperienceSection ref={(el) => (sectionsRef.current[1] = el)} data={data} />
       <ProjectsSection ref={(el) => (sectionsRef.current[2] = el)} data={data} />
       <SkillsSection ref={(el) => (sectionsRef.current[3] = el)} data={data} />
-      <FooterSection />
+      <FooterSection data={data} />
       <PortfolioHistoryTrigger data={data} />
     </div>
   );

@@ -7,13 +7,13 @@ export const HeaderSection = ({ currentSection, data }) => {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-primaryColorLight sm:text-5xl">
-          <a href="/">Faizan Khan</a>
+          <a href="/">{data.name}</a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-primaryColorLight sm:text-xl">
-          Software Engineer
+          {data.title}
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I build pixel-perfect, engaging, and accessible digital experiences.
+          {data.subtitle}
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">

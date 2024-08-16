@@ -26,7 +26,7 @@ const ExperienceSection = forwardRef(({data}, ref) => {
         <div className="mt-12">
           <a
             className="inline-flex items-baseline leading-tight text-primaryColorLight hover:text-secondaryColor focus-visible:text-secondaryColor font-semibold group/link text-base"
-            href="https://faizankhan06.github.io/MyFiles/Faizan_CV.pdf"
+            href={data.resume}
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"
