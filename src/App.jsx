@@ -4,6 +4,7 @@ import MainLayout from "./Components/MainLayout/MainLayout";
 import MouseTrackingEffect from "./Components/MouseTrackingEffect";
 import Error404 from "./Components/Error404/Error404";
 import ArchiveProjectSection from "./Components/ArchivedProject/ArchiveProjectSection";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
   const [jsonData, setJsonData] = useState([]);
@@ -30,8 +31,8 @@ function App() {
       });
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (loading) return <Loader/>;
+  if (error) return <><Loader/><div>Error: {error.message}</div></>;
 
   const router = createBrowserRouter([
     {
